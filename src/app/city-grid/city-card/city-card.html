@@ -1,1 +1,15 @@
-<p>city-card works!</p>
+@if (cardViewModel) {
+  <mat-card class="card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar" [style.--avatar-bg-image]="cardViewModel.avatarCssUrl"></div>
+      <mat-card-title>{{cardViewModel.city.name}}</mat-card-title>
+      <mat-card-subtitle>{{cardViewModel.city.nation}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="cardViewModel.city.cityImage" [alt]="cardViewModel.altText">
+    <mat-card-content> <p> {{cardViewModel.city.description}} </p> </mat-card-content>
+    <mat-card-actions>
+      <button type="button" matButton>nuke</button>
+      <button type="button" matButton>grow</button>
+    </mat-card-actions>
+  </mat-card>
+}

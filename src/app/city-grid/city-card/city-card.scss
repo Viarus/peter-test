@@ -1,0 +1,13 @@
+.card {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  background-image: var(--avatar-bg-image);
+  background-size: cover;
+}
+
+button {
+  text-transform: uppercase;
+}

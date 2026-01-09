@@ -1,0 +1,6 @@
+@let cities = cities$ | async;
+@if (cities) {
+  @for (city of cities; track city.nation) {
+    <app-city-card [city]="city"></app-city-card>
+  }
+}
