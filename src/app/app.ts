@@ -1,5 +1,4 @@
 import {Component, inject, OnInit, signal} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import {HttpClient} from '@angular/common/http';
 import {Store} from '@ngrx/store';
 import {CitiesApiActions} from './state/cities.actions';
@@ -7,7 +6,7 @@ import {City} from './models/city.model';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
